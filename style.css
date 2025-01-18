@@ -53,6 +53,16 @@
 /* Dark 3 */
 .title-description{
     color: rgba(114, 114, 114, 1);
+    font-size: 16px;
+}
+.titles{
+    font-size: 45px;
+    font-weight: bold;
+    color: rgba(114, 114, 114, 1);
+}
+.title-descriptions{
+    color: rgba(114, 114, 114, 1);
+    font-size: 20px;
 }
 
 /* text-title */
@@ -70,6 +80,7 @@
 .hero-section img{
     width: 100%;
     margin-top:68px;
+    margin-bottom: 20px;
 }
 .hero-title{
    font-size: 64px;
@@ -122,6 +133,42 @@ main > section{
     max-width: 100%;
 }
 
+
+/* Some facts  */
+.facts{
+    margin: auto 200px;
+
+}
+.facts-title{
+    max-width: 530px;
+    margin-top: 100px;
+
+}
+.facts-content{
+    background-color:rgba(243, 243, 243, 1);
+    border: 1px solid rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+    text-align: center;
+    align-content: center;
+  
+}
+.facts-container{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 180px;
+}
+.number{
+    font-size:2.8rem;
+    font-weight: 600px;
+    color: rgba(66, 66, 66, 1);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
 /* responsive media query */
 
 @media screen and (max-width:576px) {
@@ -131,9 +178,24 @@ main > section{
         flex-direction: column;
     }
 
-    .quick-container{
-        grid-template-columns: repeat(1, 1fr);
+    .quick-container {
+        grid-template-columns:1fr;
         margin: 50px;
+
+    }
+
+    .facts-container{
+        grid-template-columns:1fr;
+        margin-left: -100px;
+    }
+
+    .facts-title{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-left: -130px;
+        text-align: center;
+        width: 300px;
+
 
     }
 
@@ -143,9 +205,7 @@ main > section{
 /* Medium size device */
 
 @media screen and (min-width:576px) and (max-width:992px){
-    .quick-content{
-       margin:0 auto;
-    }
+
     
     .quick-container{
         grid-template-columns: repeat(2, 1fr);
@@ -167,6 +227,16 @@ main > section{
     .btn{
         margin-left:150px;
     }
+
+    .facts-container{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px;
+
+    }
+
+      .facts-title{
+        margin-left: 130px;
+      }
 
 
 
