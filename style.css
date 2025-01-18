@@ -42,7 +42,9 @@
 }
 /* Dark 1 */
 .title{
-   color: (19, 19, 19, 1);
+    font-size: 45px;
+    font-weight: bold;
+    color:rgba(19, 19, 19, 1);
 }
 /* Dark 2 */
 .sub-title{
@@ -51,6 +53,11 @@
 /* Dark 3 */
 .title-description{
     color: rgba(114, 114, 114, 1);
+}
+
+/* text-title */
+.text-title{
+    color: rgba(255, 144, 14, 1);
 }
 
 /* hero section */
@@ -68,10 +75,65 @@
    font-size: 64px;
 }
 .baner-container{
-width: 850px;
 margin: 0 auto;
 }
 
 .nav .hero-section{
     background-color: rgba(255, 144, 14, 0.1);
+}
+
+/*Quick list of Our Features*/
+.mains{
+    max-width:1440px;
+    margin: 0 auto;   
+}
+main{
+    max-width:1440px;
+    margin: 0 auto;   
+}
+.container{
+    display: flex;
+}
+main > section{
+    margin-top: 130px;
+}
+.quick-container img{
+    width: 100%;
+}
+.quick-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   margin-left: 240px;
+   gap: 20px;
+}
+
+.quick-content{
+    align-items: center;
+    align-content: center;
+    margin-left: 50px;
+    max-width: 530px;
+}
+/* Features you will love & enjoy */
+.featurec{
+    background-image: url("./images/architect.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+
+/* responsive media query */
+
+@media screen and (max-width:576px) {
+    .nav-container, .nav-content{
+        flex-direction: column;
+    }
+
+    .quick-container{
+        grid-template-columns:repeat(1, 1fr);
+      
+    }
+    /* .quick-content {
+        grid-column-start: auto;
+    } */
+
 }
