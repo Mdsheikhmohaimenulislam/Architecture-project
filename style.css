@@ -54,6 +54,8 @@
 .title-description{
     color: rgba(114, 114, 114, 1);
     font-size: 16px;
+
+    margin-bottom: 0px;
 }
 .titles{
     font-size: 45px;
@@ -63,6 +65,7 @@
 .title-descriptions{
     color: rgba(114, 114, 114, 1);
     font-size: 20px;
+
 }
 
 /* text-title */
@@ -99,10 +102,11 @@ margin: 0 auto;
     margin: 0 auto;
     background-color: rgba(255, 144, 14, 0.1);   
 }
-main{
+/* main{
     max-width:90rem;
-    margin: 0 auto;   
-}
+    margin: 0 auto; 
+
+} */
 .container{
     display: flex;
 }
@@ -126,11 +130,58 @@ main > section {
     max-width: 33.125rem;
 }
 /* Features you will love & enjoy */
-.featurec{
-    background-image: url("./images/architect.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 100%;
+/* .feature-img{
+max-width: 50%;
+} */
+
+.feature-container{
+    display: flex;
+    margin: 0 auto;
+    margin: 130px 80px 130px 80px;
+}
+.feature-property{
+    max-width:1440px;
+    margin: 0 auto; 
+}
+.title-ftr{
+    font-size: 45px;
+    font-weight: bold;
+    /* width: 0px; */
+    color:rgba(19, 19, 19, 1);
+    margin-top: 0px;
+    /* padding-right: .75rem; */
+    /* padding-left: 10rem; */
+}
+.description-ftr{
+    color: rgba(114, 114, 114, 1);
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    /* padding-right: 10.75rem; */
+    padding-left: 2rem;
+}
+#featurec-bar{
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 20px;
+}
+.feature-card{
+    padding: 1.875rem;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 1.25rem;
+    border-radius: 8px;
+    margin-top: 0px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+.feature-card.feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: rgba(19, 19, 19, 1);
+
+}
+.feature-title{
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 
